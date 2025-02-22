@@ -4,59 +4,45 @@ import { Button } from "@/components/ui/button"
 import ProjectCard from "@/components/project-card"
 import TechStack from "@/components/tech-stack"
 import ContactForm from "@/components/contact-form"
-import Header from "@/components/header"
-import Footer from "@/components/footer"
 
 
 export default function Page() {
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      <Header />
-
       <main className="container max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8">
-        
         {/* ABOUT */}
-        <section id="about" className="py-12 md:py-24 lg:py-32">
+        <section id="about" className="py-16 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
-            <div className="flex flex-col items-center justify-center space-y-4 text-center">
-              <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
-                  Software Engineer – Specializing in Modern Frontend
-                  Development
+            <div className="flex flex-col items-center justify-center space-y-12 text-center">
+              <div className="space-y-6 md:space-y-8">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl lg:text-7xl/[1.1] max-w-4xl mx-auto bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+                  Software Engineer Specializing in Modern Frontend Development
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
-                  I build snappy, scalable, and visually engaging web
-                  applications with a strong focus on React, Next.js, and
-                  Tailwind CSS. Since 2023, I’ve been crafting intuitive user
-                  experiences, optimizing performance, and working on projects
-                  like Humaya Power and Acumens.inc. Always pushing for better,
-                  faster, and more seamless digital experiences.
+                <p className=" mx-auto max-w-[700px] text-lg md:text-xl lg:text-2xl text-muted-foreground leading-relaxed">
+                  I build snappy, scalable, and visually engaging web applications with a strong focus on React, Next.js, and Tailwind CSS. Since 2023, I've been crafting intuitive user experiences, optimizing performance, and working on projects like Humaya Power and Acumens.inc. Always pushing for better, faster, and more seamless digital experiences.
                 </p>
               </div>
-              <div className="space-x-4">
+              <div className="flex space-x-6">
                 <Link href="https://github.com/Shujaulislam" target="_blank">
-                  <Button variant="outline" size="icon">
+                  <Button variant="outline" size="icon" className="transition-transform hover:scale-110 hover:bg-accent">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
                   </Button>
                 </Link>
-                <Link
-                  href="https://www.linkedin.com/in/shuja-ul-islam/"
-                  target="_blank"
-                >
-                  <Button variant="outline" size="icon">
+                <Link href="https://www.linkedin.com/in/shuja-ul-islam/" target="_blank">
+                  <Button variant="outline" size="icon" className="transition-transform hover:scale-110 hover:bg-accent">
                     <Linkedin className="h-4 w-4" />
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
                 <Link href="https://twitter.com/Shujaulislam09" target="_blank">
-                  <Button variant="outline" size="icon">
+                  <Button variant="outline" size="icon" className="transition-transform hover:scale-110 hover:bg-accent">
                     <Twitter className="h-4 w-4" />
                     <span className="sr-only">Twitter</span>
                   </Button>
                 </Link>
                 <Link href="mailto:shujaulisla@gmail.com">
-                  <Button variant="outline" size="icon">
+                  <Button variant="outline" size="icon" className="transition-transform hover:scale-110 hover:bg-accent">
                     <Mail className="h-4 w-4" />
                     <span className="sr-only">Email</span>
                   </Button>
@@ -107,7 +93,7 @@ export default function Page() {
           </div>
         </section>
 
-        <section id="contact" className="py-12 md:py-24 lg:py-32">
+        {/* <section id="contact" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <div className="mx-auto max-w-2xl">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
@@ -116,10 +102,9 @@ export default function Page() {
               <ContactForm />
             </div>
           </div>
-        </section>
+        </section> */}
+        
       </main>
-
-      <Footer />
     </div>
   );
 }
