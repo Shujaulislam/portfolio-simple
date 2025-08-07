@@ -20,8 +20,8 @@ export default function ContactPage() {
         <div className="flex flex-col items-center justify-center space-y-8 text-center">
           {/* Title & Subtitle */}
           <div className="space-y-4 w-full">
-            <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/[1.1] bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
-              Let’s Build Something Cool! <span className="text-white">🚀</span> 
+            <h1 className=" lg:h-20 md:h-16 h-10 text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl bg-clip-text text-transparent bg-gradient-to-r from-foreground to-foreground/70">
+              Let&apos;s Build Something Cool! <span className="text-white">🚀</span> 
             </h1>
             <p className="mx-auto max-w-[600px] text-base sm:text-lg md:text-xl text-muted-foreground">
               Have an idea or just want to say hi? Fill out the form below or
